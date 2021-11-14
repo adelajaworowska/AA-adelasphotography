@@ -1,0 +1,27 @@
+.main {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    background-color: red;
+    justify-content: space-around;
+}
+
+.title {
+
+    /* display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch; */
+    background-color: blue;
+}
+
+.galery {
+
+    /* display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch; */
+    background-color: green;
+}

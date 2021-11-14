@@ -7,9 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainPageComponent implements OnInit {
 
+  images: string[];
+
   constructor() { }
 
   ngOnInit(): void {
+    console.log("ngOnInit")
+    this.prepareListOfImages();
   }
 
+  prepareListOfImages(){
+   // TODO
+   // this images = ...
+  }
 }

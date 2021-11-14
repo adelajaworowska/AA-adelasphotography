@@ -1,1 +1,12 @@
-<p>main-page works!!!</p>
+<div class="main">
+    <div class="title">
+        <p>Analog photography <br>
+        by Adela Jaworowska </p>
+    </div>
+
+    <div class="galery">
+        <div *ngFor="let image of images" >
+            <img src='{{image}}'/>
+        </div>
+    </div>
+</div>
