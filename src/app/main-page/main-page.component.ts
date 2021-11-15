@@ -42,6 +42,9 @@ export class MainPageComponent implements OnInit {
   styles = [
     { name: 'main-green', value: '#062922' },
     { name: 'light-beige', value: '#F7F6F4' },
+    { name: 'header-font', value: '"Anton", sans-serif' },
+    { name: 'subheader-font', value: '"Hurricane", cursive' },
+    { name: 'bodytext-font', value: '"Montserrat", sans-serif' },
   ];
 
   applyStyles(): void {

@@ -1,20 +1,22 @@
 /* main page */
 @import url("https://fonts.googleapis.com/css2?family=Anton&family=Hurricane&family=Montserrat:wght@300&display=swap");
+
 footer {
   background-color: var(--main-green);
   color: var(--light-beige);
   padding: 0.5rem;
+  font-family: var(--bodytext-font);
 }
 
 h1 {
-  font-family: "Anton", sans-serif;
+  font-family: var(--header-font);
   font-size: 50px;
   letter-spacing: 0.5em;
   margin: 0;
 }
 
 h2 {
-  font-family: "Hurricane", cursive;
+  font-family: var(--subheader-font);
   font-size: 40px;
   font-weight: 100;
   margin: 0;
