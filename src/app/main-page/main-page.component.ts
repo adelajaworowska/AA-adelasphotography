@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { interval, Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-main-page',
@@ -8,16 +9,30 @@ import { Component, OnInit } from '@angular/core';
 export class MainPageComponent implements OnInit {
 
   images: string[];
+  imageIndex: number;
+
+  imagesCycleSubscription: Subscription;
 
   constructor() { }
 
   ngOnInit(): void {
-    console.log("ngOnInit")
-    this.prepareListOfImages();
+    this.fetchListOfImages();
+
+    this.imageIndex = 0;
+
+    this.imagesCycleSubscription = interval(5000)
+    .subscribe((val) => { this.cycleImage() });
   }
 
-  prepareListOfImages(){
-   // TODO
-   // this images = ...
+  fetchListOfImages(): void{
+    fetch('./assets/files-list.txt')
+    .then(response => response.text())
+    .then(data => {
+      this.images = data.split(',');
+    });
+  }
+
+  cycleImage(): void{
+    this.imageIndex = this.imageIndex + 1 % this.images.length;
   }
 }
