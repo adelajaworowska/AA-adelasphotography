@@ -1,38 +1,36 @@
 /* main page */
-body {
-  margin: 0;
-}
 
 footer {
-  background-color: rgb(0, 53, 45);
-  color: #fff;
+  background-color: var(--main-green);
+  color: var(--light-beige);
   padding: 0.5rem;
 }
 
 img {
   /* width: 100%; */
   object-fit: cover;
-  width: 18rem;
-  height: 18rem;
+  width: 20rem;
+  height: 20rem;
 }
 
 .main {
   display: flex;
   flex-direction: row;
-  background-color: red;
+  background-color: var(--light-beige);
   height: 100%;
   margin: 0;
 }
 
 .leftSide {
-  background-color: rgb(0, 53, 45);
+  background-color: var(--main-green);
   flex: 1;
-  color: #fff;
+  color: var(--light-beige);
 }
 
 .galery {
   flex: 2;
   display: grid;
+  margin: 5rem;
 
   /*responsive grid*/
   grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
