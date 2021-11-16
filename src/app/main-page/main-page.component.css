@@ -1,27 +1,55 @@
-.main {
+/* main page */
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Hurricane&family=Montserrat:wght@300&display=swap");
 
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: stretch;
-    background-color: red;
-    justify-content: space-around;
+footer {
+  background-color: var(--main-green);
+  color: var(--light-beige);
+  padding: 0.5rem;
+  font-family: var(--bodytext-font);
 }
 
-.title {
+h1 {
+  font-family: var(--header-font);
+  font-size: 50px;
+  letter-spacing: 0.5em;
+  margin: 0;
+}
 
-    /* display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: stretch; */
-    background-color: blue;
+h2 {
+  font-family: var(--subheader-font);
+  font-size: 40px;
+  font-weight: 100;
+  margin: 0;
+}
+
+img {
+  /* width: 100%; */
+  object-fit: cover;
+  width: 20rem;
+  height: 20rem;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  background-color: var(--light-beige);
+  height: 100%;
+  margin: 0;
+}
+
+.leftSide {
+  background-color: var(--main-green);
+  flex: 1;
+  color: var(--light-beige);
 }
 
 .galery {
+  flex: 2;
+  display: grid;
+  margin: 5rem;
 
-    /* display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: stretch; */
-    background-color: green;
+  /*responsive grid*/
+  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+  gap: 0.5rem;
+  justify-items: center;
 }
