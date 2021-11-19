@@ -1,0 +1,19 @@
+img {
+  display: block;
+  width: 50%;
+  margin: 3rem auto;
+}
+
+h2 {
+  text-align: center;
+}
+
+.aboutMe {
+  flex: 2;
+  height: 100%;
+}
+
+.aboutMeText {
+  text-align: center;
+  margin: 2rem;
+}

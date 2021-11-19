@@ -1,5 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Hurricane&family=Montserrat:wght@300&display=swap");
+
 /* You can add global styles to this file, and also import other style files */
 body {
   margin: 0;
   padding: 0;
+}
+
+footer {
+  background-color: var(--main-green);
+  color: var(--light-beige);
+  padding: 0.5rem;
+  font-family: var(--bodytext-font);
+}
+
+h1 {
+  font-family: var(--header-font);
+  font-size: 50px;
+  letter-spacing: 0.5em;
+  margin: 0;
+}
+
+h2 {
+  font-family: var(--subheader-font);
+  font-size: 40px;
+  font-weight: 100;
+  margin: 0;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  background-color: var(--light-beige);
+  height: 100%;
+  margin: 0;
+}
+
+.leftSide {
+  background-color: var(--main-green);
+  flex: 1;
+  color: var(--light-beige);
 }

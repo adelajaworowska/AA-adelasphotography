@@ -22,8 +22,6 @@ export class MainPageComponent implements OnInit {
     this.imagesCycleSubscription = interval(5000).subscribe((val) => {
       this.cycleImage();
     });
-
-    this.applyStyles();
   }
 
   fetchListOfImages(): void {
@@ -36,20 +34,5 @@ export class MainPageComponent implements OnInit {
 
   cycleImage(): void {
     this.imageIndex = this.imageIndex + (1 % this.images.length);
-  }
-
-  /*styles*/
-  styles = [
-    { name: 'main-green', value: '#062922' },
-    { name: 'light-beige', value: '#F7F6F4' },
-    { name: 'header-font', value: '"Anton", sans-serif' },
-    { name: 'subheader-font', value: '"Hurricane", cursive' },
-    { name: 'bodytext-font', value: '"Montserrat", sans-serif' },
-  ];
-
-  applyStyles(): void {
-    this.styles.forEach((data) => {
-      document.documentElement.style.setProperty(`--${data.name}`, data.value);
-    });
   }
 }
