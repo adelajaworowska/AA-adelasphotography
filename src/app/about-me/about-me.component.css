@@ -17,18 +17,3 @@ h2 {
   text-align: center;
   margin: 2rem;
 }
-
-/*changes that are supposed to be in styles.css, but then they'll destroy a layout of
-mainpage */
-
-/* body {
-  height: 100%;
-}
-
-html {
-  height: 100%;
-}
-
-.appBody {
-  height: 90%;
-} */

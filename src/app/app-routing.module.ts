@@ -4,7 +4,7 @@ import { AboutMeComponent } from './about-me/about-me.component';
 import { MainPageComponent } from './main-page/main-page.component';
 
 const routes: Routes = [
-  { path: 'aboutme', component: AboutMeComponent },
+  { path: 'about-me', component: AboutMeComponent },
   { path: '', component: MainPageComponent },
   { path: '**', component: MainPageComponent },
 ];
