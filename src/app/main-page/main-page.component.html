@@ -8,8 +8,8 @@
   </div>
 
   <div class="galery">
-  <ng-container *ngFor="let image of images; index as i">
-    <img src="./assets/img/{{ image }}" *ngIf="i < 10"/>
+  <ng-container *ngFor="let image of images">
+    <img src="./assets/img/{{ image }}"/>
   </ng-container>
 </div>
 
