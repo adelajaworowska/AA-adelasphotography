@@ -8,7 +8,6 @@ import { interval, Subscription } from 'rxjs';
 })
 export class MainPageComponent implements OnInit {
   images: string[];
-  imageIndex: number;
 
   imagesCycleSubscription: Subscription;
 
@@ -17,11 +16,6 @@ export class MainPageComponent implements OnInit {
   ngOnInit(): void {
     this.fetchListOfImages();
 
-    this.imageIndex = 0;
-
-    this.imagesCycleSubscription = interval(5000).subscribe((val) => {
-      this.cycleImage();
-    });
   }
 
   fetchListOfImages(): void {
@@ -32,7 +26,4 @@ export class MainPageComponent implements OnInit {
       });
   }
 
-  cycleImage(): void {
-    this.imageIndex = this.imageIndex + (1 % this.images.length);
-  }
 }

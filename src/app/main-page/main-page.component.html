@@ -8,16 +8,9 @@
   </div>
 
   <div class="galery">
-    <img src="./assets/img/{{ images[imageIndex] }}" />
-    <img src="./assets/img/{{ images[imageIndex + 1] }}" />
-    <img src="./assets/img/{{ images[imageIndex + 2] }}" />
-    <img src="./assets/img/{{ images[imageIndex + 3] }}" />
-    <img src="./assets/img/{{ images[imageIndex + 4] }}" />
-    <img src="./assets/img/{{ images[imageIndex + 5] }}" />
-    <img src="./assets/img/{{ images[imageIndex + 6] }}" />
-    <img src="./assets/img/{{ images[imageIndex + 7] }}" />
-    <img src="./assets/img/{{ images[imageIndex + 8] }}" />
-  </div>
+  <ng-container *ngFor="let image of images">
+    <img src="./assets/img/{{ image }}"/>
+  </ng-container>
 </div>
 
 <footer>
