@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { interval, Subscription } from 'rxjs';
-import { gsap, TimelineMax } from 'gsap';
+import { gsap } from 'gsap';
 import ScrollMagic from 'ScrollMagic';
 
 @Component({
@@ -34,9 +34,12 @@ export class MainPageComponent implements OnInit {
     // });
     // menuAnim.pause();
 
-    const tween = gsap.timeline({ paused: true, repeat: -1, yoyo: true });
+    const tween = gsap.timeline({ paused: true });
     var controller = new ScrollMagic.Controller({});
-    tween.to('.main', 1, { left: '10%', xPercent: -10 });
+    tween.to('.galery', 1, {
+      scale: 1.5,
+      xPercent: -25,
+    });
     new ScrollMagic.Scene({
       triggerElement: '#img',
       duration: '100%',
@@ -45,7 +48,7 @@ export class MainPageComponent implements OnInit {
         tween.play();
       })
       .on('leave', function () {
-        tween.pause();
+        tween.reverse();
       })
       .addTo(controller);
     // this.imagesCycleSubscription = interval(5000).subscribe((val) => {
