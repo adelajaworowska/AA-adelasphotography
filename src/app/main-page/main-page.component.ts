@@ -21,19 +21,6 @@ export class MainPageComponent implements OnInit {
 
     this.imageIndex = 0;
 
-    // var menuAnim = gsap.from('img', {
-    //   // scrollTrigger: {
-    //   //   trigger: '#img',
-    //   //   // start: 'top center',
-    //   //   // markers: true,
-    //   //   toggleActions: 'play pause reverse reset',
-    //   // },
-    //   x: 1300,
-    //   duration: 5,
-    //   stagger: 0.3,
-    // });
-    // menuAnim.pause();
-
     const tween = gsap.timeline({ paused: true });
     var controller = new ScrollMagic.Controller({});
     tween.to('.galery', 1, {
@@ -42,7 +29,6 @@ export class MainPageComponent implements OnInit {
     });
     new ScrollMagic.Scene({
       triggerElement: '#img',
-      duration: '100%',
     })
       .on('enter', function () {
         tween.play();
@@ -51,9 +37,6 @@ export class MainPageComponent implements OnInit {
         tween.reverse();
       })
       .addTo(controller);
-    // this.imagesCycleSubscription = interval(5000).subscribe((val) => {
-    //   this.cycleImage();
-    // });
   }
 
   fetchListOfImages(): void {
