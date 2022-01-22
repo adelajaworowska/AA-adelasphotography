@@ -1,0 +1,16 @@
+.main {
+    background-color: var(--main-green);
+    color: var(--light-beige);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 0;
+  }
+  
+  .leftSide {
+    background-color: var(--main-green);
+    flex: 1;
+    color: var(--light-beige);
+    height: 100%;
+    margin: 0;
+  }

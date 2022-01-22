@@ -1,9 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Anton&family=Hurricane&family=Montserrat:wght@300&display=swap");
 
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+
 body {
   margin: 0;
   padding: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif; 
+}
+
+.appBody {
+  height: 100%;
 }
 
 footer {
@@ -27,16 +35,18 @@ h2 {
   margin: 0;
 }
 
-.main {
-  display: flex;
-  flex-direction: row;
-  background-color: var(--light-beige);
+ .main {
+  /*display: flex;
+  flex-direction: row; 
+  background-color: var(--light-beige);*/
+  background-color: pink;
   height: 100%;
   margin: 0;
 }
 
-.leftSide {
-  background-color: var(--main-green);
-  flex: 1;
-  color: var(--light-beige);
+.test {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  width: 100%
 }
